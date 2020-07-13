@@ -30,7 +30,7 @@ namespace SimpleWebAppMVC
                     context.Database.EnsureCreated();
                 } catch (InvalidOperationException ex) {
                     var logger = services.GetRequiredService<ILogger<Program>>();
-                    logger.LogError(ex, "An error occurred creating the DB.");
+                    logger.LogError(ex, "An error occurred creating SQL DB, this DB Error.");
                 }
             }
 

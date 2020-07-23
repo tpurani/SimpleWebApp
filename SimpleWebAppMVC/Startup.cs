@@ -31,7 +31,7 @@ namespace SimpleWebAppMVC
         {
            // services.AddDbContext<AppDbContext>(
             //    options => options.UseSqlServer(this.Configuration.GetConnectionString("DbConnection"))
-            //);
+            ////;
 
             services.AddMvc();
         }

@@ -29,9 +29,9 @@ namespace SimpleWebAppMVC
          */
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(
-                options => options.UseSqlServer(this.Configuration.GetConnectionString("DbConnection"))
-            );
+           // services.AddDbContext<AppDbContext>(
+            //    options => options.UseSqlServer(this.Configuration.GetConnectionString("DbConnection"))
+            //);
 
             services.AddMvc();
         }
